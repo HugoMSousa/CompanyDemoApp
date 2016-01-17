@@ -1,0 +1,4 @@
+/* User List Title */
+"userListViewController.title" = "Benutzer";
+"albumListViewController.title" = "Alben";
+"photoListViewController.title" = "Fotos";

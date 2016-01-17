@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PhotoTableViewCell" customModule="CompanyPhotos" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="330" height="117"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="17x-yO-i0X">
+                    <rect key="frame" x="15" y="8" width="100" height="100"/>
+                    <color key="backgroundColor" red="0.33086647940000002" green="0.57153632499999996" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="gk0-Ur-klB"/>
+                        <constraint firstAttribute="height" constant="100" id="mU6-mb-r9s"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photo Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a5i-Gz-QUj">
+                    <rect key="frame" x="135" y="8" width="187" height="101"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="a5i-Gz-QUj" firstAttribute="leading" secondItem="17x-yO-i0X" secondAttribute="trailing" constant="20" id="2hC-xz-zoX"/>
+                <constraint firstItem="17x-yO-i0X" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="EK9-Zr-Ho5"/>
+                <constraint firstAttribute="bottom" secondItem="a5i-Gz-QUj" secondAttribute="bottom" constant="8" id="JsC-sR-Len"/>
+                <constraint firstItem="17x-yO-i0X" firstAttribute="top" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="PEq-J9-cJQ"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="17x-yO-i0X" secondAttribute="bottom" constant="8" id="XBX-mC-s9X"/>
+                <constraint firstItem="17x-yO-i0X" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="dfP-3e-OWo"/>
+                <constraint firstItem="a5i-Gz-QUj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="dmE-af-RFr"/>
+                <constraint firstAttribute="trailing" secondItem="a5i-Gz-QUj" secondAttribute="trailing" constant="8" id="duB-Wm-RIG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="nameLabel" destination="a5i-Gz-QUj" id="d0C-17-Qk8"/>
+                <outlet property="photoImageView" destination="17x-yO-i0X" id="5A1-rb-zaB"/>
+            </connections>
+            <point key="canvasLocation" x="335" y="167.5"/>
+        </view>
+    </objects>
+</document>
